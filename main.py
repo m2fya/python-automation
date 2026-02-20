@@ -1,7 +1,14 @@
-num = [120, 999, 1000, 5000]
+numbers = []
 
-for value in num:
-	if value >= 1000:
-		print(f"{value} -> Premium")
-	else:
-		print(f"{value} -> Regular")
+count = int(input("How many numbers?: "))
+
+for i in range(count):
+
+	value = int(input("Enter numbers: "))
+
+	numbers.append(value)
+
+print(numbers)
+print(len(numbers))
+print(min(numbers))
+	
